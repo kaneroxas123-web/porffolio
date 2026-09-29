@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kane Nold Roxas - Resume Portfolio</title>
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #000000;
+      color: #ffffff;
+      font-family: 'Inter', 'Segoe UI', sans-serif;
+      padding: 40px 20px;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Resume Document Wrapper */
+    .resume-container {
+      width: 100%;
+      max-width: 850px;
+      background: #000000;
+      border: 1px solid #ffffff;
+      border-radius: 12px;
+      padding: 40px;
+    }
+
+    /* Header Styling */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      border-bottom: 1px solid #ffffff;
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 1px solid #ffffff;
+    }
+
+    .header-info h1 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #ffffff;
+    }
+
+    .badge {
+      color: #000000;
+      background-color: #ffffff;
+      border: 1px solid #ffffff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-top: 6px;
+    }
+
+    .header-info p {
+      color: #ffffff;
+      font-size: 13px;
+      margin-top: 10px;
+      line-height: 1.5;
+      opacity: 0.9;
+    }
+
+    /* Two-Column Grid Layout */
+    .resume-grid {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 32px;
+    }
+
+    @media (max-width: 650px) {
+      .resume-container {
+        padding: 20px;
+      }
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .resume-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Section Styling */
+    .section-title {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #ffffff;
+      margin-bottom: 14px;
+      border-bottom: 1px solid #ffffff;
+      padding-bottom: 4px;
+    }
+
+    .sidebar-section, .main-section {
+      margin-bottom: 28px;
+    }
+
+    /* Contact Links */
+    .contact-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .contact-item {
+      font-size: 13px;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .contact-item i {
+      color: #ffffff;
+    }
+
+    .contact-item a {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    /* Skills Tags */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill-tag {
+      background: #000000;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+
+    /* Experience & Projects Entries */
+    .entry {
+      margin-bottom: 20px;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .entry-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .entry-date {
+      font-size: 12px;
+      color: #ffffff;
+      opacity: 0.8;
+    }
+
+    .entry-subtitle {
+      font-size: 13px;
+      color: #ffffff;
+      font-style: italic;
+      margin-bottom: 6px;
+    }
+
+    .entry-desc {
+      font-size: 13px;
+      color: #ffffff;
+      line-height: 1.5;
+      opacity: 0.9;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 12px;
+      color: #ffffff;
+      text-decoration: underline;
+      margin-top: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="resume-container">
+    
+    <!-- Document Header -->
+    <header class="header">
+      <img src="2x2.jpg" onerror="this.src='https://placehold.co/100x100/000000/ffffff?text=KNR';" alt="Kane Nold Roxas" class="profile-img">
+      <div class="header-info">
+        <h1>Kane Nold Roxas</h1>
+        <span class="badge">BSIT-MWA Student</span>
+        <p>Passionate IT student specializing in Mobile and Web Applications. Focused on developing modern, high-performance, user-centric software solutions.</p>
+      </div>
+    </header>
+
+    <!-- 2-Column Grid -->
+    <div class="resume-grid">
+      
+      <!-- LEFT COLUMN: Contact & Skills -->
+      <aside class="left-column">
+        
+        <!-- Contact Info -->
+        <div class="sidebar-section">
+          <h2 class="section-title">Contacts</h2>
+          <ul class="contact-list">
+            <li class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:kaneroxas123@gmail.com">kaneroxas123@gmail.com</a>
+            </li>
+            <li class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <span>+63 9766308318</span>
+            </li>
+            <li class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Philippines</span>
+            </li>
+            <li class="contact-item">
+              <i class="fa-brands fa-github"></i>
+              <a href="https://github.com" target="_blank">github.com/kaneroxas</a>
+            </li>
+           
+          </ul>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="sidebar-section">
+          <h2 class="section-title">Skills</h2>
+          <div class="skills-list">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">NONE</span>
+            <span class="skill-tag">NONE</span>
+            <span class="skill-tag">NONE</span>
+            <span class="skill-tag">NONE</span>
+            <span class="skill-tag">NONE</span>
+            <span class="skill-tag">NONE</span>
+          </div>
+        </div>
+
+      </aside>
+
+      <!-- RIGHT COLUMN: Projects & Experience -->
+      <main class="right-column">
+        
+        <!-- Projects Section -->
+        <div class="main-section">
+          <h2 class="section-title">Featured Projects</h2>
+          
+          <div class="entry">
+            <div class="entry-header">
+              
+              
+
+          
+
+        
+        </div>
+
+      </main>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
